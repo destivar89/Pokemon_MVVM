@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- global -->
+    <string name="app_name">Pokemon MVVM</string>
+
+    <!-- extras -->
+    <string name="extra_pokemon_item">extra_pokemon_item</string>
+    <string name="extra_pokemon_list">extra_pokemon_list</string>
+    <string name="extra_error">extra_error</string>
+
+    <!--shared -->
+    <string name="shared_thumb">sharedThumb</string>
+    <string name="shared_name">sharedName</string>
+
+    <!-- detail -->
+    <string name="string_height">"Altura: %1$d cm"</string>
+    <string name="string_weight">"Peso: %1$d kg"</string>
+
+</resources>

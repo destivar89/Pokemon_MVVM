@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- global -->
+    <dimen name="elevation">4dp</dimen>
+
+    <!-- splash -->
+    <dimen name="splash_margin">60dp</dimen>
+
+    <!-- list item -->
+    <dimen name="item_view_margin">3dp</dimen>
+    <dimen name="item_view_corner_radious">2dp</dimen>
+
+    <!-- detail -->
+    <dimen name="detail_view_margin">3dp</dimen>
+    <dimen name="detail_view_corner_radious">0dp</dimen>
+    <dimen name="detail_thumb_size">130dp</dimen>
+    <dimen name="detail_thumb_padding">15dp</dimen>
+
+</resources>

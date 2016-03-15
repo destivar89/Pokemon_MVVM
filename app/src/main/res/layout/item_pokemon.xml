@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.gladheim.pokemonmvvm.list.ui.viewmodel.PokemonViewModel"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_view_margin"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/item_view_corner_radious"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/pokemon_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="15dp"
+                app:imageUrl="@{viewModel.pokemonId}"
+                app:imageLoader="@{viewModel.imageLoader}"
+                android:transitionName="@string/shared_thumb"/>/>
+
+            <TextView
+                android:id="@+id/pokemon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pokemon_image"
+                android:layout_centerVertical="true"
+                android:text="@{viewModel.name}"
+                android:transitionName="string/shared_name"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>
